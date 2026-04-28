@@ -1,0 +1,38 @@
+PENJELASAN SOAL 1
+Negative
+Mengubah pixel menjadi kebalikan dari nilai aslinya:
+terang ? gelap
+gelap ? terang
+Logaritmik
+Meningkatkan detail pada bagian gelap.
+
+Perbedaan persebaran nilai keabuan
+Citra asli memiliki distribusi pixel sesuai kondisi awal gambar.
+Citra negatif membalik distribusi histogram, dimana nilai gelap menjadi terang dan sebaliknya.
+Citra logaritmik memperlebar distribusi pada area gelap, sehingga detail pada bagian gelap menjadi lebih terlihat.
+Kapan logaritmik lebih baik dari negatif
+Transformasi logaritmik lebih bermanfaat ketika citra memiliki banyak area gelap, karena dapat meningkatkan detail pada bagian tersebut.
+Sedangkan negatif hanya membalik warna tanpa meningkatkan detail.
+
+PENJELASAN SOAL 2
+LPF
+Menghaluskan gambar : noise hilang tapi detail berkurang
+HPF
+Menonjolkan tepi : hanya bagian perubahan tajam yang terlihat
+BPF (Sharpen)
+Menggabungkan : hasil lebih tajam dari asli 
+Perbandingan hasil 
+LPF menghasilkan gambar yang lebih halus karena menghilangkan komponen frekuensi tinggi, sehingga detail berkurang.
+HPF menghasilkan gambar yang menonjolkan tepi karena hanya mempertahankan komponen frekuensi tinggi.
+BPF menghasilkan gambar yang lebih tajam karena mengkombinasikan frekuensi rendah dan tinggi.
+
+Nilai rata-rata pixel
+Nilai rata-rata pixel pada LPF cenderung mendekati nilai asli karena hanya menghaluskan gambar.
+HPF memiliki nilai rata-rata yang lebih rendah karena sebagian besar area menjadi gelap kecuali tepi.
+BPF memiliki nilai yang sedikit lebih tinggi karena efek penajaman meningkatkan kontras.
+
+Domain Spasial dan Frekuensi
+Pada domain spasial, operasi dilakukan langsung pada pixel menggunakan kernel.
+Sedangkan pada domain frekuensi, LPF berfungsi melewatkan frekuensi rendah, HPF melewatkan frekuensi tinggi, dan BPF melewatkan keduanya untuk menghasilkan gambar yang lebih tajam.
+
+
